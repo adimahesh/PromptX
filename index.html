@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HobbyConnect - Virtual Events & Groups</title>
+    <title>Main page</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
@@ -23,13 +23,15 @@
 
     <section class="hero">
         <h1>Connect with Like-Minded Individuals!</h1>
-        
+        <a href="/forms">
+        <button>Post Event</button>
+    </a>
     </section>
 
     <section class="search">
         <h2>Search for Groups and Hobbies</h2>
         <input type="text" id="searchInput" placeholder="Search...">
-        <button onclick="searchGroups()">Search</button>
+        <button id="searchBox" onclick="searchData()">Search</button>
     </section>
     <section class="featured-events" id="events">
         <h2>Trending Events</h2>
@@ -121,6 +123,8 @@
     </div>
     
 
-    <script src="index.js"></script>
+    <script src="fetchdb.js">
+       
+    </script>
 </body>
 </html>

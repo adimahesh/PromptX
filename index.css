@@ -6,8 +6,8 @@ body {
 }
 
 header {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #0047AB;
+    color: #FFDB58 ;
     padding: 15px;
     display: flex;
     justify-content: space-between;
@@ -37,7 +37,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #FFDB58;
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -58,8 +58,8 @@ nav ul li a:hover {
 }
 
 button {
-    background-color: #4CAF50;
-    color: white;
+    background-color:  #0047AB;
+    color: #FFDB58;
     border: none;
     padding: 10px 20px;
     margin: 10px;
@@ -69,7 +69,8 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color:navy;
+    color: white;
 }
 
 .search {
@@ -111,8 +112,8 @@ button:hover {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #4CAF50;
-    color: white;
+    background-color:  #0047AB;
+    color: #FFDB58;
 }
 
 .modal {

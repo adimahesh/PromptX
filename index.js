@@ -48,10 +48,8 @@ async function searchGroups() {
                     <h3>${event.title}</h3>
                     <p>Date: ${event.date}</p>
                     <p>${event.description}</p>
-                    <a href="https://chat.whatsapp.com/EPhF1dVXS1g9DVieo61oBd" target="_blank">
-                    <button >Join</button>
-                    </a>
-                `;
+                    <button>Join</button>
+                   `;
                 eventsContainer.appendChild(eventCard);
             });
         } else {
