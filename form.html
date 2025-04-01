@@ -62,7 +62,7 @@
 
    
     
-    <form id="eventForm">
+    <form id="eventForm" method="post" action="/add-item">
         <h2>Add Event Details</h2>
         <label for="title">Title:</label>
         <input type="text" id="title" name="title" placeholder="Enter event title" required>
@@ -78,25 +78,27 @@
 
         <label for="image">Upload Image:</label>
         <input type="text" id="image" name="image"  required>
+        <label for="image">Chat Link:</label>
+        <input type="text" id="image" name="Chat"  required>
 
         <button type="submit">Submit</button>
     </form>
 
     <script>
-        document.getElementById("eventForm").addEventListener("submit", function(event) {
-            event.preventDefault(); // Prevents form from refreshing the page
+        // document.getElementById("eventForm").addEventListener("submit", function(event) {
+        //     event.preventDefault(); // Prevents form from refreshing the page
             
-            const title = document.getElementById("title").value;
-            const date = document.getElementById("date").value;
-            const description = document.getElementById("description").value;
-            const interests = document.getElementById("interests").value.split(',').map(item => item.trim());
-            const image = document.getElementById("image").value;
-            console.log({
-                title, date, description, interests, image
-            });
+        //     const title = document.getElementById("title").value;
+        //     const date = document.getElementById("date").value;
+        //     const description = document.getElementById("description").value;
+        //     const interests = document.getElementById("interests").value.split(',').map(item => item.trim());
+        //     const image = document.getElementById("image").value;
+        //     console.log({
+        //         title, date, description, interests, image
+        //     });
 
-            alert("Form submitted successfully!");
-        });
+            
+        // });
     </script>
 
 </body>

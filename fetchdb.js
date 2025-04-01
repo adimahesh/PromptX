@@ -20,13 +20,14 @@ function displayData(dataArray) {
     dataArray.forEach(data => {
         const card = document.createElement("div");
         card.classList.add("card");
+        
 
         card.innerHTML = `
             <h3>${data.title}</h3>
             <p><strong>Date:</strong> ${data.date}</p>
             <img src="${data.image}" alt="${data.title}">
             <p>${data.description}</p>
-            <a href="https://chat.whatsapp.com/EPhF1dVXS1g9DVieo61oBd" target="_blank">
+            <a href=${data.Chat} target="_blank">
         <button >Join</button>
         </a>
         `;
@@ -61,3 +62,4 @@ function openEventModal(){
 }
 // Fetch Data on Page Load
 fetchData();
+console.log(allData)
